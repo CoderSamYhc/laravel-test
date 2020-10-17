@@ -17,8 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/task/test', function(){
-    $task = new \App\Jobs\TestTask('test');
-    $success = \Hhxsv5\LaravelS\Swoole\Task\Task::deliver($task);
-    var_dump($success);
-});
+Route::get('/task/test', [\App\Http\Controllers\TaskController::class, 'test']);

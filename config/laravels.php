@@ -78,7 +78,7 @@ return [
         'reload_async'       => true,
         'max_wait_time'      => 60,
         'enable_reuse_port'  => true,
-        'enable_coroutine'   => false,
+        'enable_coroutine'   => true,
         'http_compression'   => false,
 
         // Slow log
