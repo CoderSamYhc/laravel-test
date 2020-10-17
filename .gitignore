@@ -10,3 +10,8 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+/.idea
+/bin
+storage/laravels.conf
+storage/laravels.pid
+composer.lock
