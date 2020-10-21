@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::group(['prefix' => 'es'], function () {
+    Route::post('search', [\App\Http\Controllers\EsController::class, 'search']);
+    Route::post('update', [\App\Http\Controllers\EsController::class, 'update']);
+});
+
